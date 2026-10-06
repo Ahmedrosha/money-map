@@ -8,6 +8,7 @@
   :root { --bg:#ffffff; --text:#1d2427; --muted:#55656a; --accent:#00796b; --line:#dde5e2; }
   @media (prefers-color-scheme: dark) { :root { --bg:#0e1315; --text:#e8eeec; --muted:#8fa19c; --accent:#5ee0c2; --line:#243034; } }
   body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; }
+  ol { padding-left:22px; } [dir=rtl] ol { padding-right:22px; }
   main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
   h1 { font-size:28px; margin:0 0 4px; } h2 { font-size:19px; margin:28px 0 6px; }
   .muted { color:var(--muted); } a { color:var(--accent); }
@@ -29,6 +30,17 @@
 <h2>Stock prices look old</h2>
 <p>Tap Refresh on the investment account. Egyptian stock prices are delayed about 15 minutes. You can always set a price yourself.</p>
 
+<h2>Bank SMS on iPhone</h2>
+<p>Money Map can save your bank's SMS so you can add them as transactions in one tap.</p>
+<p><b>Automatically (iOS 16 or later):</b></p>
+<ol>
+  <li>Open the Shortcuts app → <b>Automation</b> → <b>+</b> → <b>Message</b>.</li>
+  <li><b>Message Contains:</b> EGP (you can also pick your bank as the sender). Choose <b>Run Immediately</b>, then <b>Next</b>.</li>
+  <li>Tap <b>New Blank Automation</b>, search <b>Money Map</b> and tap <b>Add Bank Message</b>. Its Message is filled with the SMS automatically. Tap <b>Done</b>.</li>
+</ol>
+<p>Each bank SMS now waits in <b>Bank Messages</b> the next time you open the app. Apple doesn't allow sharing automations, so this step is done once on each iPhone.</p>
+<p><b>By hand:</b> <a href="https://www.icloud.com/shortcuts/158297c1e354401c875ac4b3599b7994">get the Money Map shortcut</a>, then in Messages long-press a bank SMS → <b>Share</b> → <b>Money Map – Bank SMS</b>.</p>
+
 <h2>Privacy</h2>
 <p>Read our <a href="privacy.html">Privacy Policy</a>.</p>
 
@@ -41,6 +53,9 @@
 <p>على هاتفك فقط. فعّل النسخ الاحتياطي على Dropbox من الإعدادات للاحتفاظ بنسخة في حسابك، أو صدّر ملف نسخة احتياطية.</p>
 <h2>الانتقال لهاتف جديد</h2>
 <p>اربط نفس حساب Dropbox على الهاتف الجديد، أو استعد ملف النسخة الاحتياطية من الإعدادات ← النسخ الاحتياطي.</p>
+<h2>رسائل البنك على iPhone</h2>
+<p><b>تلقائيًا (iOS 16 أو أحدث):</b> افتح تطبيق الاختصارات ← <b>الأتمتة</b> ← <b>+</b> ← <b>رسالة</b>. في «الرسالة تحتوي على» اكتب EGP واختر <b>تشغيل فورًا</b> ثم <b>التالي</b>. اضغط <b>أتمتة فارغة جديدة</b>، ابحث عن <b>Money Map</b> واختر <b>Add Bank Message</b> ثم <b>تم</b>. تنتظرك كل رسالة بنك في <b>رسائل البنك</b> عند فتح التطبيق.</p>
+<p><b>يدويًا:</b> <a href="https://www.icloud.com/shortcuts/158297c1e354401c875ac4b3599b7994">احصل على اختصار Money Map</a>، ثم اضغط مطولًا على رسالة البنك ← <b>مشاركة</b> ← <b>Money Map – Bank SMS</b>.</p>
 <h2>الخصوصية</h2>
 <p>اقرأ <a href="privacy.html">سياسة الخصوصية</a>.</p>
 </div>
