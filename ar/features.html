@@ -1,172 +1,31 @@
 <!doctype html>
 <html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>مميزات Money Map</title>
-<meta name="description" content="Everything Money Map does: accounts and net worth, credit cards, stocks and crypto, budgets, goals, reports, bank SMS, backups — private on your phone.">
+<title>المميزات — Money Map</title>
+<meta name="description" content="تابع مصروفاتك وبطاقاتك وأسهمك وكل اللي تملكه في تطبيق واحد، وبياناتك بتفضل على موبايلك. معمول لمصر.">
 <link rel="icon" href="../icon.png">
-<style>
-:root{--bg:#fff;--text:#1d2427;--muted:#55656a;--accent:#00796b;--line:#dde5e2;--soft:#f3f7f6}
-@media(prefers-color-scheme:dark){:root{--bg:#0e1315;--text:#e8eeec;--muted:#8fa19c;--accent:#5ee0c2;--line:#243034;--soft:#141b1e}}
-body{margin:0;font:16px/1.6 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
-main{max-width:920px;margin:0 auto;padding:40px 16px}
-a{color:var(--accent)}
-.top{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
-.top img{width:56px;height:56px;border-radius:14px}
-.top h1{margin:0;font-size:28px;line-height:1.2}
-.top p{margin:0;color:var(--muted)}
-.lang{margin-inline-start:auto;font-size:15px}
-.lead{font-size:18px;color:var(--muted);margin:20px 0 8px}
-.stores{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:18px 0 8px}
-.badge{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--muted)}
-.badge img.as{height:52px;display:block}
-.badge img.gp{height:76px;margin:-12px -10px;display:block}
-.badge.soon img{opacity:.45}
-.badge.soon .store{opacity:.45}
-.store{display:none;align-items:center;gap:10px;background:#000;color:#fff;border:1px solid #a6a6a6;text-decoration:none;padding:8px 16px;border-radius:10px;min-width:170px}
-.store svg{width:26px;height:26px;fill:currentColor;flex:none}
-.store small{display:block;font-size:11px;line-height:1.2}
-.store b{display:block;font-size:18px;line-height:1.2}
-.badge small{font-size:12px;margin-top:2px}
-.feat{display:grid;grid-template-columns:240px 1fr;gap:32px;align-items:center;padding:36px 0;border-top:1px solid var(--line)}
-.feat:nth-of-type(even){grid-template-columns:1fr 240px}
-.feat:nth-of-type(even) .shot{order:2}
-.shot img{width:100%;border-radius:28px;border:6px solid #1d2427;box-shadow:0 10px 30px rgba(0,0,0,.18);display:block}
-.feat h2{margin:0 0 8px;font-size:24px;line-height:1.25}
-.feat .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--accent);text-transform:uppercase;margin-bottom:6px}
-.feat ul{margin:8px 0 0;padding-inline-start:20px}
-.feat li{margin:4px 0}
-.pro{display:inline-block;background:#e8b64a;color:#2a2412;font-size:11px;font-weight:800;border-radius:6px;padding:1px 6px;vertical-align:2px}
-h2.sec{font-size:24px;margin:40px 0 14px;padding-top:28px;border-top:1px solid var(--line)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
-.card{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
-.card h3{margin:0 0 4px;font-size:16px}
-.card p{margin:0;color:var(--muted);font-size:15px}
-.note{border:1px solid #e0a800;background:rgba(224,168,0,.10);border-radius:14px;padding:12px 14px;margin:16px 0}
-.foot{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:var(--muted)}
-@media(max-width:640px){
-  .feat,.feat:nth-of-type(even){grid-template-columns:1fr;gap:18px;padding:28px 0}
-  .feat:nth-of-type(even) .shot{order:0}
-  .shot{max-width:230px;margin:0 auto}
-}
-.langbar{display:flex;justify-content:flex-end;margin:0 0 12px;font-size:15px}
-.langbar a{text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 12px}
-ul,ol{padding-left:0;padding-right:22px}
-</style>
-</head><body><main>
-<div class="langbar"><a href="../features.html" lang="en" hreflang="en">English</a></div>
-<section>
-<div class="top">
-  <a href="index.html"><img src="../icon.png" alt="Money Map"></a>
-  <div><h1>مميزات Money Map</h1><p>المصروفات والثروة · من شركة تمدين</p></div>
-</div>
-<p class="lead">كل اللي تملكه وكل اللي عليك في تطبيق واحد، وبياناتك على موبايلك بس. حسابات ومعاملات بلا حدود ومجانًا.</p>
-<div class="stores">
-  <a class="badge" href="https://play.google.com/store/apps/details?id=com.rashad.moneytracker"><img class="gp" src="https://play.google.com/intl/ar/badges/static/images/badges/ar_badge_web_generic.png" alt="احصل عليه من Google Play"><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 2.3c-.2.2-.3.6-.3 1v17.4c0 .4.1.8.3 1l9.7-9.7z"/><path fill="#ffce00" d="m18.3 9 2.9 1.7c.8.5.8 1.2 0 1.7l-2.9 1.7-2.8-2.6z"/><path fill="#ff3a44" d="M14.4 13.1 17 15.7 5.4 22.3z"/><path fill="#00f076" d="M14.4 10.9 5.4 1.7 17 8.3z"/></svg><span><small>احصل عليه من</small><b>Google Play</b></span></span></a>
-  <span class="badge soon" title="قريبًا"><img class="as" src="https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/ar-sa?size=250x83" alt="حمّله من App Store"><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.86-.76-1.47.02-2.83.86-3.59 2.17-1.53 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.41 1.2-2.47-.03-.01-2.3-.88-2.32-3.51zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.22z"/></svg><span><small>حمّله من</small><b>App Store</b></span></span><small>قريبًا</small></span>
-</div>
-
-<div class="feat">
-  <div class="shot"><img src="../shots/ar_accounts.jpg" alt="الحسابات وصافي الثروة" loading="lazy"></div>
-  <div>
-    <span class="tag">الحسابات وصافي الثروة</span>
-    <h2>صورتك المالية كاملة في شاشة واحدة</h2>
-    <ul>
-      <li>حسابات البنك والكاش والمحافظ وبطاقات الائتمان والقروض والمدخرات والشهادات والدهب والعقارات والأسهم والكريبتو</li>
-      <li>صافي ثروتك على مدار الوقت، بأي عملة، بأسعار صرف محدّثة</li>
-      <li>البطاقات المستحقة قريب، وحالة النسخ الاحتياطي، وملخص الشهر في نظرة</li>
-      <li>الفلوس اللي سلّفتها أو استلفتها لكل شخص، وتكلمه أو تبعتله واتساب من التطبيق</li>
-    </ul>
-  </div>
-</div>
-
-<div class="feat">
-  <div class="shot"><img src="../shots/ar_transactions.jpg" alt="المعاملات" loading="lazy"></div>
-  <div>
-    <span class="tag">المعاملات</span>
-    <h2>سجّل مصروفك في ثواني</h2>
-    <ul>
-      <li>اكتبه، أو قوله بصوتك («صرفت 450 بنزين»)، أو صوّر الإيصال</li>
-      <li>رسائل البنك بتتحول لمعاملات — تلقائيًا على أندرويد، وباختصار على الآيفون</li>
-      <li>رسوم إنستاباي بتتحسب لوحدها</li>
-      <li>قسّم الدفعة على أكتر من فئة أو مع صاحبك، وتاجات للسفريات، وصور الإيصالات</li>
-      <li>اختياري: سجّل مكان الدفع وشوفه على الخريطة <span class="pro">PRO</span></li>
-      <li>عرض قائمة أو تقويم، بحث وفلاتر، ومدفوعات متكررة واشتراكات</li>
-    </ul>
-  </div>
-</div>
-
-<div class="feat">
-  <div class="shot"><img src="../shots/ar_invest.jpg" alt="محفظة الأسهم" loading="lazy"></div>
-  <div>
-    <span class="tag">الاستثمار</span>
-    <h2>قصة استثمارك كاملة</h2>
-    <ul>
-      <li>أسهم وصناديق البورصة المصرية بأسعار متأخرة حوالي 15 دقيقة</li>
-      <li>شراء وبيع وتوزيعات — مكسب كل سهم، حتى الأسهم اللي بعتها</li>
-      <li>استورد صفقاتك من فواتير الوسيط أو سكرين شوت</li>
-      <li>والكريبتو كمان: أسعار العملات واستيراد صفقات Binance</li>
-      <li>تقرير المحفظة مقارنة بـ EGX30 أو البيتكوين <span class="pro">PRO</span></li>
-    </ul>
-  </div>
-</div>
-
-<div class="feat">
-  <div class="shot"><img src="../shots/ar_card.jpg" alt="بطاقة الائتمان" loading="lazy"></div>
-  <div>
-    <span class="tag">بطاقات الائتمان</span>
-    <h2>متفوّتش ميعاد سداد تاني</h2>
-    <ul>
-      <li>الكشوف ومواعيد الإغلاق والسداد والحد الأدنى والحد المتاح</li>
-      <li>الأقساط شهر بشهر</li>
-      <li>النقاط والكاش باك بقواعد البنك بتاعك</li>
-      <li>تذكير قبل ميعاد السداد، وادفع من أي حساب بضغطة</li>
-    </ul>
-  </div>
-</div>
-
-<div class="feat">
-  <div class="shot"><img src="../shots/ar_budgets.jpg" alt="الميزانيات" loading="lazy"></div>
-  <div>
-    <span class="tag">الميزانيات والأهداف</span>
-    <h2>خطّط لشهرك وادّخر للي يهمك</h2>
-    <ul>
-      <li>ميزانية شهرية لكل فئة، وتنبيه قبل ما تتعداها</li>
-      <li>أهداف ادخار مربوطة بحساباتك — وتعرف تحوّش كام كل شهر</li>
-      <li>احتفال لما توصل لهدفك، وبطاقة تشاركها (من غير مبالغ)</li>
-    </ul>
-  </div>
-</div>
-
-<div class="feat">
-  <div class="shot"><img src="../shots/ar_reports.jpg" alt="التقارير" loading="lazy"></div>
-  <div>
-    <span class="tag">التقارير <span class="pro">PRO</span></span>
-    <h2>اعرف فلوسك بتروح فين</h2>
-    <ul>
-      <li>المصروفات والدخل حسب الفئة، الميزانية مقابل الفعلي، والاتجاهات</li>
-      <li>ملخص الشهر وعامك في سطور</li>
-      <li>خريطة «أين أصرف» لأماكنك</li>
-      <li>تصدير كل حاجة لإكسل</li>
-    </ul>
-  </div>
-</div>
-
-<h2 class="sec">وحاجات تانية كتير</h2>
-<div class="grid">
-  <div class="card"><h3>🏠 العقارات والإيجار</h3><p>شقق وأراضي بالمتر أو الفدان أو القيراط — حتى لو حصة مع العيلة. ودخل الإيجار بزيادته السنوية.</p></div>
-  <div class="card"><h3>🪙 الدهب</h3><p>الدهب بالوزن والعيار، بسعر النهارده.</p></div>
-  <div class="card"><h3>💱 عملات كتير</h3><p>مرتب بعملة ومدخرات بعملة تانية — والإجمالي بالعملة اللي تختارها.</p></div>
-  <div class="card"><h3>🔒 قفل التطبيق</h3><p>بصمة الوش أو الصباع، وإخفاء المبالغ بضغطة.</p></div>
-  <div class="card"><h3>📱 الويدجت</h3><p>أرقامك على الشاشة الرئيسية.</p></div>
-  <div class="card"><h3>🛟 النسخ الاحتياطي</h3><p>نسخة يومية تلقائية على موبايلك، وكمان على Google Drive أو Dropbox بتاعك.</p></div>
-  <div class="card"><h3>🏆 الإنجازات</h3><p>احتفل بإنجازات صافي ثروتك وشارك عامك في سطور — نسب بس.</p></div>
-  <div class="card"><h3>🇪🇬 عربي وإنجليزي</h3><p>التطبيق كله باللغتين.</p></div>
-</div>
-
-<div class="note"><b>بياناتك بتفضل على موبايلك.</b> Money Map مالوش سيرفرات ومش بيوصله أي حاجة من بياناتك، فخلّي عندك نسخة احتياطية — <a href="index.html#backup">شوف طرق النسخ الاحتياطي</a>.</div>
-</section>
-
-<p class="foot"><a href="index.html">الرئيسية</a> · <a href="privacy.html">سياسة الخصوصية</a> · <a href="support.html">الدعم</a></p>
+<link rel="alternate" hreflang="en" href="../features.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<div class="wrap"><header class="bar">
+  <a class="brand" href="index.html"><img src="../icon.png" alt="">Money Map</a>
+  <nav><a class="opt" href="features.html" aria-current="page">المميزات</a><a class="opt" href="support.html">الدعم</a><a class="opt" href="privacy.html">الخصوصية</a><a class="lang" href="../features.html" lang="en" hreflang="en">English</a></nav>
+</header></div>
+<main class="page">
+<div class="wrap"><h1>كل اللي Money Map بيعمله</h1><p class="sub" style="font-size:19px;max-width:34em">تطبيق واحد لمصروفك اليومي وثروتك على المدى الطويل. مجاني، ومعاه Pro للتقارير.</p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=com.rashad.moneytracker"><img class="gp" src="https://play.google.com/intl/ar/badges/static/images/badges/ar_badge_web_generic.png" alt="احصل عليه من Google Play"><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 2.3c-.2.2-.3.6-.3 1v17.4c0 .4.1.8.3 1l9.7-9.7z"/><path fill="#ffce00" d="m18.3 9 2.9 1.7c.8.5.8 1.2 0 1.7l-2.9 1.7-2.8-2.6z"/><path fill="#ff3a44" d="M14.4 13.1 17 15.7 5.4 22.3z"/><path fill="#00f076" d="M14.4 10.9 5.4 1.7 17 8.3z"/></svg><span><small>احصل عليه من</small><b>Google Play</b></span></span></a><span class="badge soon" title="قريبًا"><img class="as" src="https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/ar-sa?size=250x83" alt="حمّله من App Store"><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.86-.76-1.47.02-2.83.86-3.59 2.17-1.53 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.41 1.2-2.47-.03-.01-2.3-.88-2.32-3.51zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.22z"/></svg><span><small>حمّله من</small><b>App Store</b></span></span><small>قريبًا</small></span></div></div>
+<section style="padding-top:40px"><div class="wrap"><div class="flist"><div class="frow"><div class="phone"><img src="../shots/ar_accounts.jpg" alt="الحسابات وصافي الثروة" loading="lazy"></div><div><h3>الحسابات وصافي الثروة</h3><ul><li>حسابات البنك والكاش والمحافظ وبطاقات الائتمان والقروض والمدخرات والشهادات والدهب والعقارات والأسهم والكريبتو</li><li>صافي ثروتك على مدار الوقت بأي عملة، بأسعار صرف محدّثة</li><li>الفلوس اللي سلّفتها أو استلفتها لكل شخص، وتكلمه أو تبعتله واتساب من التطبيق</li></ul></div></div><div class="frow"><div class="phone"><img src="../shots/ar_transactions.jpg" alt="المعاملات" loading="lazy"></div><div><h3>المعاملات</h3><ul><li>اكتبه، أو قوله بصوتك («صرفت 450 بنزين»)، أو صوّر الإيصال</li><li>رسائل البنك لمعاملات: تلقائيًا على أندرويد، وباختصار على الآيفون (iOS 16 أو أحدث)</li><li>رسوم إنستاباي بتتحسب لوحدها</li><li>قسّم الدفعة على فئات أو مع صاحبك، وتاجات، وصور الإيصالات</li><li>مدفوعات متكررة واشتراكات، وعرض قائمة أو تقويم</li><li>اختياري: سجّل مكان الدفع</li></ul></div></div><div class="frow"><div class="phone"><img src="../shots/ar_invest.jpg" alt="الاستثمار" loading="lazy"></div><div><h3>الاستثمار</h3><ul><li>أسهم وصناديق البورصة المصرية بأسعار متأخرة حوالي 15 دقيقة</li><li>شراء وبيع وتوزيعات، ومكسب الأسهم اللي بعتها</li><li>استورد صفقاتك من فواتير الوسيط أو سكرين شوت</li><li>أسعار الكريبتو واستيراد صفقات Binance</li><li>تقرير المحفظة مقارنة بـ EGX30 أو البيتكوين (Pro)</li></ul></div></div><div class="frow"><div class="phone"><img src="../shots/ar_card.jpg" alt="بطاقات الائتمان" loading="lazy"></div><div><h3>بطاقات الائتمان</h3><ul><li>الكشوف ومواعيد الإغلاق والسداد والحد الأدنى والحد المتاح</li><li>الأقساط شهر بشهر</li><li>النقاط والكاش باك بقواعد البنك بتاعك</li><li>تذكير قبل ميعاد السداد، وادفع من أي حساب</li></ul></div></div><div class="frow"><div class="phone"><img src="../shots/ar_budgets.jpg" alt="الميزانيات والأهداف" loading="lazy"></div><div><h3>الميزانيات والأهداف</h3><ul><li>ميزانية شهرية لكل فئة بتنبيهات</li><li>أهداف ادخار مربوطة بحساباتك، وتعرف تحوّش كام كل شهر</li><li>شارك بطاقة لما توصل لهدفك، من غير مبالغ</li></ul></div></div><div class="frow"><div class="phone"><img src="../shots/ar_reports.jpg" alt="التقارير (Pro)" loading="lazy"></div><div><h3>التقارير (Pro)</h3><ul><li>المصروفات والدخل حسب الفئة، الميزانية مقابل الفعلي، والاتجاهات</li><li>ملخص الشهر وعامك في سطور</li><li>خريطة «أين أصرف» لأماكنك</li><li>تصدير كل حاجة لإكسل</li></ul></div></div></div></div></section>
+<section style="background:var(--surface)"><div class="wrap"><h2>وكمان</h2><ul class="also"><li><b>العقارات والإيجار</b><span>شقق وأراضي بالمتر أو الفدان أو القيراط، وملكية مشتركة، والإيجار بزيادته السنوية.</span></li><li><b>الدهب</b><span>بالوزن والعيار، بسعر النهارده.</span></li><li><b>عملات كتير</b><span>مرتب بعملة ومدخرات بعملة تانية، والإجمالي بالعملة اللي تختارها.</span></li><li><b>قفل التطبيق</b><span>بصمة الوش أو الصباع، وإخفاء المبالغ بضغطة.</span></li><li><b>الويدجت</b><span>أرقامك على الشاشة الرئيسية.</span></li><li><b>النسخ الاحتياطي</b><span>نسخة يومية على موبايلك، وكمان على Google Drive أو Dropbox بتاعك.</span></li><li><b>الإنجازات</b><span>احتفل بإنجازات صافي ثروتك وشارك عامك في سطور، نسب بس.</span></li><li><b>عربي وإنجليزي</b><span>التطبيق كله باللغتين.</span></li></ul></div></section>
+<section><div class="wrap story"><h2>ليه عملناه</h2><p>Money Map صنعه شخص بيسجّل كل جنيه بيصرفه من أكتر من 12 سنة، وجرّب تطبيقات كتير لإدارة الفلوس.</p><p>والحياة الحقيقية كانت دايمًا بتجيب مواقف التطبيقات دي مش بتعرف تتعامل معاها: بطاقات بأقساط ونقاط، رسوم إنستاباي، مرتب بعملة ومدخرات بعملة تانية، أسهم بتتشري وتتباع، دهب وشهادات، أرض مشتركة مع العيلة، وفلوس مسلّفة لصاحبك.</p><p>فعملنا التطبيق اللي كنا عايزينه دايمًا: فاهم الفلوس بتمشي إزاي في مصر، بياناتك فيه خاصة على موبايلك، ومش هتدفع عشان تضيف حساب أو معاملة.</p></div></section>
+</main>
+<footer><div class="wrap"><div class="row"><span>Money Map من شركة تمدين في مصر.</span><nav><a href="features.html">المميزات</a><a href="support.html">الدعم</a><a href="privacy.html">الخصوصية</a><a href="mailto:info@tamdeen-properties.com">info@tamdeen-properties.com</a></nav></div></div></footer>
 <script>
 document.querySelectorAll('.badge img').forEach(function(i){function f(){i.style.display='none';var s=i.nextElementSibling;if(s)s.style.display='inline-flex';}i.addEventListener('error',f);if(i.complete&&!i.naturalWidth)f();});
+var shot=document.getElementById('shot');
+document.querySelectorAll('.picks button').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.picks button').forEach(function(x){x.setAttribute('aria-selected','false')});
+  b.setAttribute('aria-selected','true');
+  if(shot){shot.style.opacity=0;setTimeout(function(){shot.src=b.dataset.src;shot.alt=b.dataset.alt;shot.style.opacity=1},150);}
+});});
 </script>
-</main></body></html>
+</body></html>

@@ -1,110 +1,48 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Money Map</title>
-<meta name="description" content="Money Map – Expense & Wealth: track spending, credit cards, loans and investments, private on your phone.">
+<html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Money Map — expenses and wealth, private on your phone</title>
+<meta name="description" content="Track spending, credit cards, stocks and everything you own in one app that keeps your data on your phone. Made for Egypt.">
 <link rel="icon" href="icon.png">
-<style>
-:root{--bg:#fff;--text:#1d2427;--muted:#55656a;--accent:#00796b;--btn:#111;--btntext:#fff;--line:#dde5e2}
-@media(prefers-color-scheme:dark){:root{--bg:#0e1315;--text:#e8eeec;--muted:#8fa19c;--accent:#5ee0c2;--btn:#f2f5f4;--btntext:#0e1315;--line:#243034}}
-body{margin:0;font:16px/1.6 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
-main{max-width:760px;margin:0 auto;padding:48px 16px}
-a{color:var(--accent)}
-.hero{display:flex;gap:18px;align-items:center}
-.hero img{width:84px;height:84px;border-radius:20px}
-h1{margin:0;font-size:30px;line-height:1.2}
-.sub{color:var(--muted);margin:4px 0 0}
-.stores{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:28px 0 12px}
-.badge{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--muted)}
-.badge img.as{height:52px;display:block}
-.badge img.gp{height:76px;margin:-12px -10px;display:block}
-.badge.soon img{opacity:.45}
-.badge.soon .store{opacity:.45}
-.store{display:none;align-items:center;gap:10px;background:#000;color:#fff;border:1px solid #a6a6a6;text-decoration:none;padding:8px 16px;border-radius:10px;min-width:170px}
-.store svg{width:26px;height:26px;fill:currentColor;flex:none}
-.store small{display:block;font-size:11px;line-height:1.2}
-.store b{display:block;font-size:18px;line-height:1.2}
-.badge small{font-size:12px;margin-top:2px}
-.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:8px 0 28px}
-.card{border:1px solid var(--line);border-radius:16px;padding:14px 16px}
-.card h3{margin:0 0 4px;font-size:16px}
-.card p{margin:0;color:var(--muted);font-size:15px}
-h2{font-size:21px;margin:32px 0 10px}
-.story{border-inline-start:4px solid var(--accent);padding:2px 0 2px 16px;margin:0 0 8px}
-[dir=rtl] .story{padding:2px 16px 2px 0}
-.story p{margin:0 0 10px}
-.note{border:1px solid #e0a800;background:rgba(224,168,0,.10);border-radius:14px;padding:12px 14px;margin:0 0 10px}
-.note p{margin:0}
-.sc{border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:0 0 8px}
-ul{padding-left:22px}
-.foot{border-top:1px solid var(--line);margin-top:32px;padding-top:16px;color:var(--muted)}
-[dir=rtl] ul{padding-left:0;padding-right:22px}
-.langbar{display:flex;justify-content:flex-end;margin:0 0 12px;font-size:15px}
-.langbar a{text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 12px}
-</style>
-</head><body><main>
-<div class="langbar"><a href="ar/index.html" lang="ar" hreflang="ar">العربية</a></div>
-<div class="hero">
-  <img src="icon.png" alt="">
-  <div><h1>Money Map</h1><p class="sub">Expense &amp; Wealth · by Tamdeen Company</p></div>
-</div>
+<link rel="alternate" hreflang="ar" href="ar/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="wrap"><header class="bar">
+  <a class="brand" href="index.html"><img src="icon.png" alt="">Money Map</a>
+  <nav><a class="opt" href="features.html">Features</a><a class="opt" href="support.html">Support</a><a class="opt" href="privacy.html">Privacy</a><a class="lang" href="ar/index.html" lang="ar" hreflang="ar">العربية</a></nav>
+</header></div>
+<main>
+<div class="wrap"><div class="hero">
+  <div><h1>All your money.<br>Only on your phone.</h1><p class="lead">Spending, cards, loans, stocks, gold and property in one app. No account, no servers, no ads.</p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=com.rashad.moneytracker"><img class="gp" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play"><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 2.3c-.2.2-.3.6-.3 1v17.4c0 .4.1.8.3 1l9.7-9.7z"/><path fill="#ffce00" d="m18.3 9 2.9 1.7c.8.5.8 1.2 0 1.7l-2.9 1.7-2.8-2.6z"/><path fill="#ff3a44" d="M14.4 13.1 17 15.7 5.4 22.3z"/><path fill="#00f076" d="M14.4 10.9 5.4 1.7 17 8.3z"/></svg><span><small>GET IT ON</small><b>Google Play</b></span></span></a><span class="badge soon" title="Coming soon"><img class="as" src="https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store"><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.86-.76-1.47.02-2.83.86-3.59 2.17-1.53 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.41 1.2-2.47-.03-.01-2.3-.88-2.32-3.51zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.22z"/></svg><span><small>Download on the</small><b>App Store</b></span></span><small>Coming soon</small></span></div></div>
+  <div class="phone"><img src="shots/en_accounts.jpg" alt="Everything you own and owe"></div>
+</div></div>
 
-<p>See everything you own and owe in one place: spending, credit cards, installments, savings and stocks. Your data stays on your phone.</p>
+<section id="features" style="background:var(--surface)"><div class="wrap">
+  <h2>Built for how money really works in Egypt</h2>
+  <p class="intro">Tap a feature to see it.</p>
+  <p class="swipe">Swipe to see more</p>
+  <div class="stage"><ul class="picks" role="tablist"><li><button role="tab" aria-selected="true" data-src="shots/en_accounts.jpg" data-alt="Everything you own and owe"><h3>Everything you own and owe</h3><p>Banks, cash, cards, loans, gold, property, stocks and crypto, with your net worth in the currency you choose.</p></button></li><li><button role="tab" aria-selected="false" data-src="shots/en_transactions.jpg" data-alt="Add spending in seconds"><h3>Add spending in seconds</h3><p>Type it, say it, scan a receipt, or turn a bank SMS into a transaction. InstaPay fees are worked out for you.</p></button></li><li><button role="tab" aria-selected="false" data-src="shots/en_invest.jpg" data-alt="Your full investing story"><h3>Your full investing story</h3><p>EGX stocks and funds, every buy, sell and dividend, and the profit on stocks you've already sold.</p></button></li><li><button role="tab" aria-selected="false" data-src="shots/en_card.jpg" data-alt="Never miss a card due date"><h3>Never miss a card due date</h3><p>Statements, installments, points and cashback, with a reminder before you need to pay.</p></button></li><li><button role="tab" aria-selected="false" data-src="shots/en_budgets.jpg" data-alt="Plan the month, save for goals"><h3>Plan the month, save for goals</h3><p>Budgets that warn you before you overspend, and goals that tell you how much to put aside.</p></button></li><li><button role="tab" aria-selected="false" data-src="shots/en_reports.jpg" data-alt="See where your money goes"><h3>See where your money goes <span class="pro">PRO</span></h3><p>Charts by category, month summary, Year in Review, a map of where you spend, and Excel export.</p></button></li></ul>
+    <div class="screen"><div class="phone"><img id="shot" src="shots/en_accounts.jpg" alt="Everything you own and owe"></div></div></div>
+  <div class="strip"><figure><div class="phone"><img src="shots/en_accounts.jpg" alt="Everything you own and owe" loading="lazy"></div><figcaption><h3>Everything you own and owe</h3><p>Banks, cash, cards, loans, gold, property, stocks and crypto, with your net worth in the currency you choose.</p></figcaption></figure><figure><div class="phone"><img src="shots/en_transactions.jpg" alt="Add spending in seconds" loading="lazy"></div><figcaption><h3>Add spending in seconds</h3><p>Type it, say it, scan a receipt, or turn a bank SMS into a transaction. InstaPay fees are worked out for you.</p></figcaption></figure><figure><div class="phone"><img src="shots/en_invest.jpg" alt="Your full investing story" loading="lazy"></div><figcaption><h3>Your full investing story</h3><p>EGX stocks and funds, every buy, sell and dividend, and the profit on stocks you've already sold.</p></figcaption></figure><figure><div class="phone"><img src="shots/en_card.jpg" alt="Never miss a card due date" loading="lazy"></div><figcaption><h3>Never miss a card due date</h3><p>Statements, installments, points and cashback, with a reminder before you need to pay.</p></figcaption></figure><figure><div class="phone"><img src="shots/en_budgets.jpg" alt="Plan the month, save for goals" loading="lazy"></div><figcaption><h3>Plan the month, save for goals</h3><p>Budgets that warn you before you overspend, and goals that tell you how much to put aside.</p></figcaption></figure><figure><div class="phone"><img src="shots/en_reports.jpg" alt="See where your money goes" loading="lazy"></div><figcaption><h3>See where your money goes <span class="pro">PRO</span></h3><p>Charts by category, month summary, Year in Review, a map of where you spend, and Excel export.</p></figcaption></figure></div>
+</div></section>
 
-<div class="stores">
-  <a class="badge" href="https://play.google.com/store/apps/details?id=com.rashad.moneytracker"><img class="gp" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play"><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 2.3c-.2.2-.3.6-.3 1v17.4c0 .4.1.8.3 1l9.7-9.7z"/><path fill="#ffce00" d="m18.3 9 2.9 1.7c.8.5.8 1.2 0 1.7l-2.9 1.7-2.8-2.6z"/><path fill="#ff3a44" d="M14.4 13.1 17 15.7 5.4 22.3z"/><path fill="#00f076" d="M14.4 10.9 5.4 1.7 17 8.3z"/></svg><span><small>GET IT ON</small><b>Google Play</b></span></span></a>
-  <span class="badge soon appstore" title="Coming soon"><img class="as" src="https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store"><span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.86-.76-1.47.02-2.83.86-3.59 2.17-1.53 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.41 1.2-2.47-.03-.01-2.3-.88-2.32-3.51zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.22z"/></svg><span><small>Download on the</small><b>App Store</b></span></span><small>Coming soon</small></span>
-</div>
-<p><a href="features.html"><b>See all features with pictures →</b></a></p>
+<section><div class="wrap"><div class="promises"><div><h3>Private</h3><p>No account, no servers, no ads. Your data never leaves your phone.</p></div><div><h3>Unlimited and free</h3><p>Add as many accounts and transactions as you like. Pay only if you want the reports.</p></div><div><h3>Made for Egypt</h3><p>InstaPay fees, bank SMS, EGX and gold prices, in English and Arabic.</p></div></div></div></section>
 
-<p class="sc">📲 <b>iPhone bank SMS shortcut</b> (iOS 16 or later): <a href="https://www.icloud.com/shortcuts/158297c1e354401c875ac4b3599b7994">Get the Money Map shortcut</a> to send a bank SMS into the app from Messages. <a href="support.html#bank-sms">How to set it up</a></p>
+<section style="padding-top:0"><div class="wrap">
+  <div class="prostrip"><div><h2>Money Map Pro</h2><p>All reports and charts, the portfolio report, Year in Review, the spending map and Excel export. Try it free for 7 days.</p></div><a class="go" href="features.html">See all features</a></div>
+</div></section>
 
-<h2 id="backup">Your data, your backup</h2>
-<div class="note">
-<p><b>Important:</b> Money Map has no servers and never receives your data. Everything stays on your phone, which keeps it private, but it also means <b>we cannot recover your data</b> if your phone is lost, broken or reset, or the app is deleted. Keeping a backup is your responsibility.</p>
-</div>
-<p>Money Map gives you several ways to back up, and we recommend using at least one that keeps a copy off your phone:</p>
-<ul>
-  <li><b>Automatic daily backup</b> (on by default): a copy on your phone every day, keeping the last 7 days and 4 weeks. Protects against mistakes, but not against losing the phone.</li>
-  <li><b>Google Drive</b> (recommended): connect your Google account and the app backs up automatically to a private folder in your own Drive, keeping the last 10 copies.</li>
-  <li><b>Dropbox</b>: connect your own Dropbox and every change is copied there automatically. Also moves your data to a new phone.</li>
-  <li><b>Back Up &amp; Share</b>: send a backup file to Google Drive, email, WhatsApp or anywhere you like.</li>
-  <li><b>Save to phone storage</b>: save the file to Files / Downloads, or copy it to your computer.</li>
-  <li><b>iPhone</b>: your iCloud backup of the phone normally includes the app's data too.</li>
-</ul>
-<p>To restore, open the backup file with Money Map, or use Settings → Backup &amp; Restore. Your current data is kept so you can undo.</p>
-
-<h2>Our story</h2>
-<div class="story">
-<p>Money Map was built by someone who has tracked every pound for more than 12 years, using one money app after another.</p>
-<p>Over those years, real life kept bringing situations the apps couldn't handle: credit cards with installments and points, InstaPay fees, salaries in one currency and savings in another, stocks bought and sold, gold, certificates, a flat or a piece of land shared with family, money lent to a friend. Each time meant a workaround, a spreadsheet on the side, or giving up.</p>
-<p>So we built the app we always wanted: one place that understands how money really works in Egypt, keeps your data private on your phone, and doesn't make you pay to add an account or a transaction.</p>
-<p>Almost every feature in Money Map comes from a real situation we went through ourselves.</p>
-</div>
-
-<h2>Why Money Map</h2>
-<div class="why">
-  <div class="card"><h3>🔒 Your money, your pocket</h3><p>Everything stays on your phone. No account, no servers, no ads. Nobody knows what you ate yesterday 🤣</p></div>
-  <div class="card"><h3>♾️ No limits</h3><p>Unlimited accounts and transactions, free. You only pay if you want the reports.</p></div>
-  <div class="card"><h3>📈 Your full investing story</h3><p>Not just what you hold today: sold stocks stay with their profit or loss, every trade and dividend.</p></div>
-  <div class="card"><h3>📦 You own your data</h3><p>Take a full backup file anytime and move it wherever you want. Nothing is locked in.</p></div>
-  <div class="card"><h3>🛟 Always backed up</h3><p>An automatic copy on your phone every day, plus optional backup to your own Google Drive or Dropbox.</p></div>
-  <div class="card"><h3>🇪🇬 Made for Egypt</h3><p>InstaPay fees worked out for you, bank SMS turned into transactions, EGX prices about 15 minutes behind the market, gold prices.</p></div>
-</div>
-
-<h2>Everything else</h2>
-<ul>
-  <li>Add expenses by voice, or scan a receipt</li>
-  <li>Credit cards: statement and due dates, installments, points and cashback, reminders</li>
-  <li>Import trades from your broker's invoices or screenshots</li>
-  <li>Savings, certificates, gold, property and money you've lent</li>
-  <li>Budgets with alerts, and net worth over time in any currency</li>
-  <li>Pay someone back: call or WhatsApp them from the transaction</li>
-  <li>Face ID / fingerprint lock, home screen widgets, English and Arabic</li>
-</ul>
-<p><b>Money Map Pro</b> adds all reports and charts, the portfolio report, Year in Review and Excel export. 7-day free trial.</p>
-
-<p class="foot"><a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a></p>
+<section style="padding-top:0"><div class="wrap narrow" id="backup"><div class="note"><p>Your data is stored only on your phone, so we can't recover it if the phone is lost. Turn on a backup to Google Drive or Dropbox in Settings. <a href="support.html#backup">Backup options</a></p></div></div></section>
+</main>
+<footer><div class="wrap"><div class="row"><span>Money Map is made by Tamdeen Company in Egypt.</span><nav><a href="features.html">Features</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="mailto:info@tamdeen-properties.com">info@tamdeen-properties.com</a></nav></div></div></footer>
 <script>
 document.querySelectorAll('.badge img').forEach(function(i){function f(){i.style.display='none';var s=i.nextElementSibling;if(s)s.style.display='inline-flex';}i.addEventListener('error',f);if(i.complete&&!i.naturalWidth)f();});
+var shot=document.getElementById('shot');
+document.querySelectorAll('.picks button').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.picks button').forEach(function(x){x.setAttribute('aria-selected','false')});
+  b.setAttribute('aria-selected','true');
+  if(shot){shot.style.opacity=0;setTimeout(function(){shot.src=b.dataset.src;shot.alt=b.dataset.alt;shot.style.opacity=1},150);}
+});});
 </script>
-</main></body></html>
+</body></html>

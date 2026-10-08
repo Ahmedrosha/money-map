@@ -1,28 +1,19 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy – Money Map</title>
-<style>
-  :root { --bg:#ffffff; --text:#1d2427; --muted:#55656a; --accent:#00796b; --line:#dde5e2; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#0e1315; --text:#e8eeec; --muted:#8fa19c; --accent:#5ee0c2; --line:#243034; } }
-  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
-  h1 { font-size:28px; margin:0 0 4px; } h2 { font-size:19px; margin:32px 0 8px; }
-  .muted { color:var(--muted); } a { color:var(--accent); }
-  ul { padding-left:22px; } li { margin:4px 0; }
-  hr { border:0; border-top:1px solid var(--line); margin:40px 0; }
-  [dir=rtl] { font-family: -apple-system, system-ui, "Segoe UI", Tahoma, sans-serif; }
-.langbar{display:flex;justify-content:flex-end;margin:0 0 12px;font-size:15px}
-.langbar a{text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 12px}
-</style>
-</head>
-<body>
-<main>
-<div class="langbar"><a href="ar/privacy.html" lang="ar" hreflang="ar">العربية</a></div>
-<h1>Privacy Policy</h1>
-<p class="muted">Money Map · Tamdeen Company · Last updated: 8 October 2026</p>
+<html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Money Map</title>
+<meta name="description" content="Track spending, credit cards, stocks and everything you own in one app that keeps your data on your phone. Made for Egypt.">
+<link rel="icon" href="icon.png">
+<link rel="alternate" hreflang="ar" href="ar/privacy.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="wrap"><header class="bar">
+  <a class="brand" href="index.html"><img src="icon.png" alt="">Money Map</a>
+  <nav><a class="opt" href="features.html">Features</a><a class="opt" href="support.html">Support</a><a class="opt" href="privacy.html" aria-current="page">Privacy</a><a class="lang" href="ar/privacy.html" lang="ar" hreflang="ar">العربية</a></nav>
+</header></div>
+<main class="page"><div class="wrap narrow"><h1>Privacy Policy</h1>
+<p class="sub">Money Map · Tamdeen Company · Last updated: 8 October 2026</p>
 
 <h2>In short</h2>
 <p>Your financial data stays on your phone. We have no servers, no user accounts, no advertising and no tracking. We never see, collect, sell or share your data.</p>
@@ -60,7 +51,7 @@
 <p>Like any internet request, these services can see your device's IP address. The app's text recognition uses Google ML Kit on your device, which may send anonymous usage and performance information to Google.</p>
 
 <h2>Your responsibility for backups</h2>
-<p>Because we never receive or store your data, we cannot restore it if your phone is lost, damaged or reset, or the app is deleted. You are responsible for keeping a backup, using the options in the app (automatic daily backup on the phone, Google Drive, Dropbox, or a backup file saved where you choose). See <a href="index.html#backup">backup options</a>.</p>
+<p>Because we never receive or store your data, we cannot restore it if your phone is lost, damaged or reset, or the app is deleted. You are responsible for keeping a backup, using the options in the app (automatic daily backup on the phone, Google Drive, Dropbox, or a backup file saved where you choose). See <a href="support.html#backup">backup options</a>.</p>
 
 <h2>Children</h2>
 <p>The app is not directed at children under 13 and does not knowingly collect any data from them.</p>
@@ -69,8 +60,15 @@
 <p>If this policy changes, the new version will be posted on this page with a new date.</p>
 
 <h2>Contact</h2>
-<p>Questions about privacy: <a href="mailto:info@tamdeen-properties.com">info@tamdeen-properties.com</a></p>
-
-</main>
-</body>
-</html>
+<p>Questions about privacy: <a href="mailto:info@tamdeen-properties.com">info@tamdeen-properties.com</a></p></div></main>
+<footer><div class="wrap"><div class="row"><span>Money Map is made by Tamdeen Company in Egypt.</span><nav><a href="features.html">Features</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="mailto:info@tamdeen-properties.com">info@tamdeen-properties.com</a></nav></div></div></footer>
+<script>
+document.querySelectorAll('.badge img').forEach(function(i){function f(){i.style.display='none';var s=i.nextElementSibling;if(s)s.style.display='inline-flex';}i.addEventListener('error',f);if(i.complete&&!i.naturalWidth)f();});
+var shot=document.getElementById('shot');
+document.querySelectorAll('.picks button').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.picks button').forEach(function(x){x.setAttribute('aria-selected','false')});
+  b.setAttribute('aria-selected','true');
+  if(shot){shot.style.opacity=0;setTimeout(function(){shot.src=b.dataset.src;shot.alt=b.dataset.alt;shot.style.opacity=1},150);}
+});});
+</script>
+</body></html>

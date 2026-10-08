@@ -1,52 +1,30 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Support – Money Map</title>
-<style>
-  :root { --bg:#ffffff; --text:#1d2427; --muted:#55656a; --accent:#00796b; --line:#dde5e2; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#0e1315; --text:#e8eeec; --muted:#8fa19c; --accent:#5ee0c2; --line:#243034; } }
-  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; }
-  ol { padding-left:22px; } [dir=rtl] ol { padding-right:22px; }
-  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
-  h1 { font-size:28px; margin:0 0 4px; } h2 { font-size:19px; margin:28px 0 6px; }
-  .muted { color:var(--muted); } a { color:var(--accent); }
-  hr { border:0; border-top:1px solid var(--line); margin:40px 0; }
-.langbar{display:flex;justify-content:flex-end;margin:0 0 12px;font-size:15px}
-.langbar a{text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 12px}
-</style>
-</head>
-<body>
-<main>
-<div class="langbar"><a href="ar/support.html" lang="ar" hreflang="ar">العربية</a></div>
-<h1>Support</h1>
-<p class="muted">Money Map · Tamdeen Company</p>
-<p>Need help, found a problem or have an idea? Email us at <a href="mailto:info@tamdeen-properties.com">info@tamdeen-properties.com</a> and we'll reply as soon as we can. Please include your phone model and the app version (Settings, at the bottom).</p>
-
-<h2>Where is my data?</h2>
-<p>Only on your phone. We never receive it, so <b>we cannot recover it</b> if the phone is lost or the app is deleted. Please keep a backup: connect Google Drive or Dropbox in Settings, or export a backup file to Google Drive, email or your computer. See <a href="index.html#backup">all backup options</a>.</p>
-
-<h2>Moving to a new phone</h2>
-<p>Connect the same Google Drive or Dropbox account on the new phone and restore from it, or restore the backup file you exported, from Settings → Backup.</p>
-
-<h2>Stock prices look old</h2>
-<p>Tap Refresh on the investment account. Egyptian stock prices are delayed about 15 minutes. You can always set a price yourself.</p>
-
-<h2 id="bank-sms">Bank SMS on iPhone</h2>
-<p>Money Map can save your bank's SMS so you can add them as transactions in one tap.</p>
-<p><b>Automatically (iOS 16 or later):</b></p>
-<ol>
-  <li>Open the Shortcuts app → <b>Automation</b> → <b>+</b> → <b>Message</b>.</li>
-  <li><b>Message Contains:</b> EGP (you can also pick your bank as the sender). Choose <b>Run Immediately</b>, then <b>Next</b>.</li>
-  <li>Tap <b>New Blank Automation</b>, search <b>Money Map</b> and tap <b>Add Bank Message</b>. Its Message is filled with the SMS automatically. Tap <b>Done</b>.</li>
-</ol>
-<p>Each bank SMS now waits in <b>Bank Messages</b> the next time you open the app. Apple doesn't allow sharing automations, so this step is done once on each iPhone.</p>
-<p><b>By hand (iOS 16 or later):</b> <a href="https://www.icloud.com/shortcuts/158297c1e354401c875ac4b3599b7994">get the Money Map shortcut</a>, then in Messages long-press a bank SMS → <b>Share</b> → <b>Money Map – Bank SMS</b>.</p>
-
-<h2>Privacy</h2>
-<p>Read our <a href="privacy.html">Privacy Policy</a>.</p>
-
-</main>
-</body>
-</html>
+<html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Money Map</title>
+<meta name="description" content="Track spending, credit cards, stocks and everything you own in one app that keeps your data on your phone. Made for Egypt.">
+<link rel="icon" href="icon.png">
+<link rel="alternate" hreflang="ar" href="ar/support.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="wrap"><header class="bar">
+  <a class="brand" href="index.html"><img src="icon.png" alt="">Money Map</a>
+  <nav><a class="opt" href="features.html">Features</a><a class="opt" href="support.html" aria-current="page">Support</a><a class="opt" href="privacy.html">Privacy</a><a class="lang" href="ar/support.html" lang="ar" hreflang="ar">العربية</a></nav>
+</header></div>
+<main class="page"><div class="wrap narrow">
+<h1>Support</h1><p class="sub">Questions, problems or ideas: email <a href="mailto:info@tamdeen-properties.com">info@tamdeen-properties.com</a>. Please include your phone model and the app version (Settings, at the bottom).</p>
+<details id="data"><summary>Where is my data?</summary><div><p>Only on your phone. We never receive it, so <b>we can't recover it</b> if the phone is lost or the app is deleted. Keep a backup using one of the options below.</p></div></details><details id="backup"><summary>How do I back up?</summary><div><ul><li><b>Daily backup on the phone</b> (on by default): keeps the last 7 days and 4 weeks. Protects against mistakes, not against losing the phone.</li><li><b>Google Drive</b> (recommended): connect your Google account and the app backs up automatically to a private folder in your own Drive, keeping the last 10 copies.</li><li><b>Dropbox</b>: every change is copied to your own Dropbox automatically.</li><li><b>Back up and share</b>: send a backup file to email, WhatsApp or anywhere you like.</li><li><b>iPhone</b>: your iCloud backup of the phone normally includes the app's data too.</li></ul><p>To restore, open the backup file with Money Map, or go to Settings → Backup &amp; Restore. Your current data is kept so you can undo.</p></div></details><details id="new-phone"><summary>Moving to a new phone</summary><div><p>Connect the same Google Drive or Dropbox account on the new phone and restore from it, or open the backup file you exported.</p></div></details><details id="bank-sms"><summary>Bank SMS on iPhone (iOS 16 or later)</summary><div><p><b>Automatic:</b> in the Shortcuts app, open <b>Automation</b> → <b>+</b> → <b>Message</b>. Set <b>Message Contains</b> to EGP, choose <b>Run Immediately</b>, then <b>Next</b>. Tap <b>New Blank Automation</b>, search for <b>Money Map</b> and choose <b>Add Bank Message</b>, then <b>Done</b>. Each bank SMS now waits in Bank Messages when you open the app.</p><p><b>By hand:</b> <a href="https://www.icloud.com/shortcuts/158297c1e354401c875ac4b3599b7994">get the Money Map shortcut</a>, then in Messages long-press a bank SMS → <b>Share</b> → <b>Money Map – Bank SMS</b>.</p><p>On Android, bank SMS are read automatically in the version from our website.</p></div></details><details id="prices"><summary>Stock prices look old</summary><div><p>Tap Refresh on the investment account. EGX prices are about 15 minutes behind the market, and you can always set a price yourself.</p></div></details><details id="pro"><summary>Pro, trial and cancelling</summary><div><p>Pro is bought through the App Store or Google Play. To change plan or cancel, open the Pro screen in the app and tap <b>Manage Subscription</b>, or go to your App Store or Google Play subscriptions.</p></div></details>
+</div></main>
+<script>if(location.hash){var d=document.getElementById(location.hash.slice(1));if(d&&d.tagName==='DETAILS')d.open=true;}</script>
+<footer><div class="wrap"><div class="row"><span>Money Map is made by Tamdeen Company in Egypt.</span><nav><a href="features.html">Features</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="mailto:info@tamdeen-properties.com">info@tamdeen-properties.com</a></nav></div></div></footer>
+<script>
+document.querySelectorAll('.badge img').forEach(function(i){function f(){i.style.display='none';var s=i.nextElementSibling;if(s)s.style.display='inline-flex';}i.addEventListener('error',f);if(i.complete&&!i.naturalWidth)f();});
+var shot=document.getElementById('shot');
+document.querySelectorAll('.picks button').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.picks button').forEach(function(x){x.setAttribute('aria-selected','false')});
+  b.setAttribute('aria-selected','true');
+  if(shot){shot.style.opacity=0;setTimeout(function(){shot.src=b.dataset.src;shot.alt=b.dataset.alt;shot.style.opacity=1},150);}
+});});
+</script>
+</body></html>
