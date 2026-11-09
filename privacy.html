@@ -18,10 +18,10 @@
   <nav><a class="opt" href="features.html">Features</a><a class="opt" href="support.html">Support</a><a class="opt" href="privacy.html" aria-current="page">Privacy</a><a class="lang" href="ar/privacy.html" lang="ar" hreflang="ar">العربية</a></nav>
 </header></div>
 <main class="page"><div class="wrap narrow"><h1>Privacy Policy</h1>
-<p class="sub">Money Map · Tamdeen Company · Last updated: 8 November 2026</p>
+<p class="sub">Money Map · Tamdeen Company · Last updated: 10 November 2026</p>
 
 <h2>In short</h2>
-<p>Your financial data stays on your phone. We have no user accounts, no advertising and no tracking. We never see, collect, sell or share your financial data. Our only server checks Pro purchases on Android, and it stores nothing (see <a href="#purchases">Checking Pro purchases</a>).</p>
+<p>Your financial data stays on your phone. We have no user accounts, no advertising and no tracking. We never see, collect, sell or share your financial data. Our server checks Pro purchases on Android and stores nothing for that (see <a href="#purchases">Checking Pro purchases</a>). If you use invites, it keeps a random phone ID and your invite code, never your name or money data (see <a href="#invites">Invite friends</a>).</p>
 
 <h2>Data stored on your phone</h2>
 <p>Accounts, transactions, budgets, cards, investments, notes, tags, receipt photos and settings are saved only in the app's private storage on your device. A full card number, if you choose to save one, is kept in the phone's secure storage (Keychain on iPhone, Keystore on Android). Deleting the app deletes this data unless you made a backup.</p>
@@ -59,6 +59,10 @@
 <h2 id="purchases">Checking Pro purchases (Android)</h2>
 <p>To make sure a Money Map Pro purchase is genuine, the Android app sends our purchase server (hosted on Cloudflare) the purchase receipt Google Play gives the app, the product bought (Lifetime, monthly or yearly) and a Google Play Integrity token that shows the app was installed from Google Play. The server asks Google Play whether the purchase is valid and replies yes or no. This happens when you buy or restore Pro and at most once a day after that.</p>
 <p>The server receives no name, email, phone number or financial data, and keeps nothing: the request is used only to answer and is then discarded. Google processes the receipt and the Integrity token under Google's privacy policy. No account or sign-in is needed. On iPhone, purchases are checked with Apple on your phone.</p>
+
+<h2 id="invites">Invite friends</h2>
+<p>Invite friends gives each phone an invite code; friends who join with it and use the app for a week earn you free months of Pro. For this, the app sends our server (hosted on Cloudflare): a random ID for your phone (on Android made from the app's own phone ID, on iPhone created by the app), whether it is an Android phone or an iPhone, the invite code you entered, how many transactions you have saved (a number only, to confirm a friend really uses the app), whether you own Pro Lifetime, and a Google Play Integrity token (Android) or an Apple DeviceCheck token (iPhone) that shows the request comes from a real phone running the real app. Apple DeviceCheck also lets the server mark that this iPhone already used an invite code, so a code can't be used twice on one phone.</p>
+<p>The server keeps the phone ID, its invite code, which code it joined with and when, and the free months it earned (on iPhone, the Apple offer code given for each month). It never receives your name, email, phone number, contacts or any transaction, amount or account. This happens when you open Invite friends, when the app starts (at most a few times a day) and once a day while your own invite is waiting to count. Free months on iPhone are redeemed with Apple. To have your invite data deleted, email us your invite code (Settings &gt; Help &amp; About &gt; Invite friends).</p>
 
 <h2>Your responsibility for backups</h2>
 <p>Because we never receive or store your data, we cannot restore it if your phone is lost, damaged or reset, or the app is deleted. You are responsible for keeping a backup, using the options in the app (automatic daily backup on the phone, Google Drive, Dropbox, or a backup file saved where you choose). See <a href="support.html#backup">backup options</a>.</p>

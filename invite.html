@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You're invited to Money Map</title>
+<meta name="description" content="A friend invited you to Money Map – Expense & Wealth: your money, cards and stocks, private on your phone.">
+<meta property="og:title" content="You're invited to Money Map">
+<meta property="og:description" content="Track spending, cards, stocks and savings. Your data stays on your phone.">
+<meta property="og:image" content="https://moneymapeg.app/icon.png">
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon.png">
+<style>body{margin:0;font:16px/1.6 -apple-system,system-ui,"Segoe UI",Roboto,"IBM Plex Sans Arabic",Tahoma,sans-serif;background:#fff;color:#1d2427;text-align:center}
+@media(prefers-color-scheme:dark){body{background:#0e1315;color:#e8eeec}.code{background:#151d20!important;border-color:#243034!important}}
+main{max-width:480px;margin:0 auto;padding:48px 16px}img{width:88px;height:88px;border-radius:20px}a{color:#00796b}
+.code{font-size:34px;font-weight:800;letter-spacing:6px;border:1.5px solid #dde5e2;border-radius:16px;padding:12px 8px;margin:12px 0;background:#f4f7f6}
+.btn{display:block;background:#00796b;color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:13px 18px;margin:10px 0;border:0;width:100%;font-size:16px;cursor:pointer}
+.alt{background:transparent;color:#00796b;border:1.5px solid #00796b}small{color:#5a6b66}</style>
+<script>
+var PLAY = "https://play.google.com/store/apps/details?id=com.rashad.moneytracker";
+var APPSTORE = "https://apps.apple.com/app/id6817193952";
+var code = ((new URLSearchParams(location.search).get("c") || "").toUpperCase().match(/^[A-Z0-9]{6}$/) || [""])[0];
+var ua = navigator.userAgent || "";
+// Android: the Play Store passes the code to the app by itself.
+if (/android/i.test(ua)) location.replace(code ? PLAY + "&referrer=" + encodeURIComponent("invite=" + code) : PLAY);
+</script>
+</head><body><main>
+<img src="icon.png" alt="">
+<div id="en">
+<h1>You're invited to Money Map</h1>
+<p>Your money, cards and stocks in one app. No account, no ads. Your data stays on your phone.</p>
+<div class="code-wrap"><small>Your friend's invite code</small><div class="code" data-code></div></div>
+<button class="btn" data-store>Copy code and open the App Store</button>
+<p><small>After installing, open Money Map and go to Settings &gt; Help &amp; About &gt; Invite friends to enter the code.</small></p>
+<a class="btn alt" href="https://play.google.com/store/apps/details?id=com.rashad.moneytracker" data-play>Get it on Google Play</a>
+</div>
+<div id="ar" dir="rtl" lang="ar" hidden>
+<h1>صديقك بيدعوك لـ Money Map</h1>
+<p>فلوسك وكروتك وأسهمك في تطبيق واحد. من غير حساب ولا إعلانات، وبياناتك بتفضل على موبايلك.</p>
+<div class="code-wrap"><small>كود الدعوة من صديقك</small><div class="code" data-code dir="ltr"></div></div>
+<button class="btn" data-store>انسخ الكود وافتح App Store</button>
+<p><small>بعد التثبيت افتح Money Map وروح الإعدادات &gt; المساعدة وعن التطبيق &gt; ادعُ أصدقاءك واكتب الكود.</small></p>
+<a class="btn alt" href="https://play.google.com/store/apps/details?id=com.rashad.moneytracker" data-play>حمّله من Google Play</a>
+</div>
+<p><a href="index.html">More about Money Map · المزيد عن Money Map</a></p>
+<script>
+if (/^ar/i.test(navigator.language || "")) { document.getElementById("en").hidden = true; document.getElementById("ar").hidden = false; document.documentElement.lang = "ar"; }
+document.querySelectorAll("[data-code]").forEach(function (e) { e.textContent = code || "—"; });
+if (!code) document.querySelectorAll(".code-wrap").forEach(function (e) { e.hidden = true; });
+document.querySelectorAll("[data-play]").forEach(function (a) { if (code) a.href = PLAY + "&referrer=" + encodeURIComponent("invite=" + code); });
+document.querySelectorAll("[data-store]").forEach(function (b) {
+  b.addEventListener("click", function () {
+    var go = function () { location.href = APPSTORE; };
+    if (code && navigator.clipboard) navigator.clipboard.writeText(code).then(go, go); else go();
+  });
+});
+</script>
+</main></body></html>
