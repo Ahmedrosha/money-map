@@ -11,17 +11,36 @@
 img{width:96px;height:96px;border-radius:22px}a{color:#00796b}</style>
 <script>
 // One link for everyone: phones go straight to their store.
+// Ad links carry utm_source / utm_campaign: the visit is counted (no IP,
+// no device id), and on Android the campaign rides along to the app.
 var PLAY = "https://play.google.com/store/apps/details?id=com.rashad.moneytracker";
 var APPSTORE = "https://apps.apple.com/app/id6817193952";
 var ua = navigator.userAgent || "";
-if (/android/i.test(ua)) { location.replace(PLAY); }
-else if (/iphone|ipad|ipod/i.test(ua) && APPSTORE) { location.replace(APPSTORE); }
+var q = new URLSearchParams(location.search);
+var src = q.get("utm_source") || "", camp = q.get("utm_campaign") || "";
+var plat = /android/i.test(ua) ? "android" : (/iphone|ipad|ipod/i.test(ua) ? "iphone" : "other");
+if (camp) {
+  PLAY += "&referrer=" + encodeURIComponent("utm_source=" + src + "&utm_campaign=" + camp);
+  try {
+    var body = JSON.stringify({ source: src, campaign: camp, platform: plat });
+    var u = "https://moneymap-verify.tamdeenprop.workers.dev/hit";
+    if (!(navigator.sendBeacon && navigator.sendBeacon(u, body))) {
+      fetch(u, { method: "POST", body: body, keepalive: true, mode: "no-cors" });
+    }
+  } catch (e) {}
+}
+if (plat === "android") { location.replace(PLAY); }
+else if (plat === "iphone" && APPSTORE) { location.replace(APPSTORE); }
+document.addEventListener("DOMContentLoaded", function () {
+  var a = document.querySelector("[data-play]");
+  if (a) a.href = PLAY;
+});
 </script>
 </head><body><main>
 <img src="icon.png" alt="">
 <h1>Money Map</h1>
 <p>Expense &amp; Wealth — your money, cards and stocks, private on your phone.</p>
-<p><a href="https://play.google.com/store/apps/details?id=com.rashad.moneytracker">Get it on Google Play</a><br>
+<p><a data-play href="https://play.google.com/store/apps/details?id=com.rashad.moneytracker">Get it on Google Play</a><br>
 <a href="https://apps.apple.com/app/id6817193952">Download on the App Store</a><br>
 <a href="index.html">More about Money Map</a></p>
 </main></body></html>
