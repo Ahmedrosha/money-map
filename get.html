@@ -19,18 +19,26 @@ var ua = navigator.userAgent || "";
 var q = new URLSearchParams(location.search);
 var src = q.get("utm_source") || "", camp = q.get("utm_campaign") || "";
 var plat = /android/i.test(ua) ? "android" : (/iphone|ipad|ipod/i.test(ua) ? "iphone" : "other");
+function go() {
+  if (go.done) return;
+  go.done = true;
+  if (plat === "android") { location.replace(PLAY); }
+  else if (plat === "iphone" && APPSTORE) { location.replace(APPSTORE); }
+}
 if (camp) {
   PLAY += "&referrer=" + encodeURIComponent("utm_source=" + src + "&utm_campaign=" + camp);
+  // Wait for the count (at most 1.5 s) before leaving: iPhone Safari drops
+  // it when the page jumps to the App Store at once.
   try {
-    var body = JSON.stringify({ source: src, campaign: camp, platform: plat });
-    var u = "https://moneymap-verify.tamdeenprop.workers.dev/hit";
-    if (!(navigator.sendBeacon && navigator.sendBeacon(u, body))) {
-      fetch(u, { method: "POST", body: body, keepalive: true, mode: "no-cors" });
-    }
-  } catch (e) {}
+    fetch("https://moneymap-verify.tamdeenprop.workers.dev/hit", {
+      method: "POST", mode: "no-cors", keepalive: true,
+      body: JSON.stringify({ source: src, campaign: camp, platform: plat })
+    }).then(go, go);
+  } catch (e) { go(); }
+  setTimeout(go, 1500);
+} else {
+  go();
 }
-if (plat === "android") { location.replace(PLAY); }
-else if (plat === "iphone" && APPSTORE) { location.replace(APPSTORE); }
 document.addEventListener("DOMContentLoaded", function () {
   var a = document.querySelector("[data-play]");
   if (a) a.href = PLAY;
