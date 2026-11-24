@@ -142,6 +142,9 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:36px 0 48px;colo
 footer .row{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
 footer nav{display:flex;gap:20px;flex-wrap:wrap}
 footer a{color:var(--muted)}
+footer a.ig{display:inline-flex;align-items:center}
+footer a.ig svg{width:20px;height:20px}
+footer a.ig:hover{color:var(--ink)}
 
 /* Pricing */
 #pricing h2 .pro{vertical-align:8px}
