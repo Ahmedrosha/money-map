@@ -27,6 +27,8 @@ function go() {
 }
 if (camp) {
   PLAY += "&referrer=" + encodeURIComponent("utm_source=" + src + "&utm_campaign=" + camp);
+  // App Store Connect campaign link: pt = provider id, ct = campaign (max 40 chars).
+  APPSTORE = "https://apps.apple.com/app/apple-store/id6817193952?pt=126463962&ct=" + encodeURIComponent(camp.slice(0, 40)) + "&mt=8";
   // Wait for the count (at most 1.5 s) before leaving: iPhone Safari drops
   // it when the page jumps to the App Store at once.
   try {
